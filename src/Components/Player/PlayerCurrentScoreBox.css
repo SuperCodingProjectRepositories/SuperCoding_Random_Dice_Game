@@ -1,0 +1,22 @@
+.score-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 140px;
+    background: #c5365e;
+    border-radius: 15px;
+}
+
+.score-box-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.score-box-current{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 450;
+}

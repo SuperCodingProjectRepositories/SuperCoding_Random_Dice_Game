@@ -1,0 +1,17 @@
+.player-box {
+    background: rgba(255, 255, 255, 0.5);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: background 0.3s ease; /* 색상 변경에 애니메이션 추가 */
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.player-box.active {
+    background: rgba(255, 255, 255, 0.75); /* 현재 플레이어의 색상 */
+
+}

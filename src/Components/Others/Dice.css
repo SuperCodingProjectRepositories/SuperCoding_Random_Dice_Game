@@ -1,0 +1,43 @@
+
+.dice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* GameBoard보다 앞으로 배치 */
+}
+
+.dice {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+.dot-1 { grid-column: 1; grid-row: 1; }
+.dot-3 { grid-column: 3; grid-row: 1; }
+.dot-5 { grid-column: 2; grid-row: 2; }
+.dot-7 { grid-column: 1; grid-row: 3; }
+.dot-9 { grid-column: 3; grid-row: 3; }
+.dot-4 { grid-column: 1; grid-row: 2; }
+.dot-6 { grid-column: 3; grid-row: 2; }
